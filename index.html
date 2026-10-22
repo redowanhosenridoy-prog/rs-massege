@@ -20,6 +20,39 @@ button,input{font:inherit}button{cursor:pointer}
 @media(max-width:900px){.topcopy{display:none}.layout{grid-template-columns:1fr}.features{border-right:0;border-bottom:1px solid var(--line);padding:0 0 12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}.screen-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.top{gap:13px;padding:16px}.logo{width:66px;height:66px;border-radius:20px;font-size:23px}.brand h1{font-size:35px}.brand p{font-size:10px}.layout{padding:12px}.features{grid-template-columns:1fr 1fr}.feature{gap:8px}.ico{width:34px;height:34px;font-size:17px}.screen-grid{grid-template-columns:1fr}.phone{max-width:360px;width:100%;margin:auto;min-height:500px}.tabs{gap:6px}.tab{padding:8px 11px;font-size:12px}}
 </style>
+  <script type="module">
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
+
+  import { getAuth } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyBFvpwR4ChOS5goesL00ElA1JEtU3M3ZkM",
+
+    authDomain: "r-s-massege.firebaseapp.com",
+
+    projectId: "r-s-massege",
+
+    storageBucket: "r-s-massege.firebasestorage.app",
+
+    messagingSenderId: "927504249573",
+
+    appId: "1:927504249573:web:38fd009009db7df84a9a0c"
+
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+  const auth = getAuth(app);
+
+  const db = getFirestore(app);
+
+  console.log("R-S massege Firebase connected");
+
+</script>
 </head>
 <body>
 <header class="top">
